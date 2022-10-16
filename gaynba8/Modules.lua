@@ -680,3 +680,18 @@ local ui
             end
         end
     })
+
+local Ambience = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateOptionsButton({
+    ["Name"] = "Ambience",
+    ["Function"] = function(callback)
+        if callback then
+            game.Lighting.Ambient = Color3.fromRGB(144, 0, 222)
+            game.Lighting.OutdoorAmbient = Color3.fromRGB(0, 0, 0)
+	    game.Lighting.TimeOfDay = "19:00:00"
+        else
+            game.Lighting.Ambient = Color3.fromRGB(91, 91, 91)
+            game.Lighting.OutdoorAmbient = Color3.fromRGB(201, 201, 201)
+	    game.Lighting.TimeOfDay = "12:00:00"
+        end
+    end
+})
