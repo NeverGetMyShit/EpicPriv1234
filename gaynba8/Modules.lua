@@ -567,7 +567,7 @@ local BiMode = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].Creat
             end
         end,
 	["Default"] = false,
-	["HoverText"] = "Funny Damage Indicators1"
+	["HoverText"] = "Funny Damage Indicator"
     })
 
 local ui
@@ -590,12 +590,11 @@ local ui
     local part
     local clone
     local Enabled = false
-    local BetterFly = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].CreateOptionsButton({
+    local BetterFly = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateOptionsButton({
         ["Name"] = "FunnyFlyV2",
         ["Function"] = function(callback)
             if callback then
                 spawn(function()
-		createwarning("Spawn", "SpawnFunc Works", 5)
                     local char = lplr.Character
                     local starttick = tick()
                     local startpos = char:FindFirstChild("HumanoidRootPart").Position
