@@ -594,6 +594,7 @@ local ui
         ["Function"] = function(callback)
             if callback then
                 spawn(function()
+		    Enabled = true
                     local char = lplr.Character
                     local starttick = tick()
                     local startpos = char:FindFirstChild("HumanoidRootPart").Position
@@ -659,6 +660,7 @@ local ui
                     end)
                 end)
             else
+		Enabled = false
                 for i,v in pairs(lplr.Character:GetChildren()) do
                     if string.lower(v.ClassName):find("part") and v.Name ~= "HumanoidRootPart" then
                         v.Transparency = 0
