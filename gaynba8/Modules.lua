@@ -685,7 +685,7 @@ local Ambience = GuiLibrary["ObjectsThatCanBeSaved"]["RenderWindow"]["Api"].Crea
     ["Name"] = "Ambience",
     ["Function"] = function(callback)
         if callback then
-            game.Lighting.Ambient = Color3.fromRGB(anticolor["Hue"], anticolor["Sat"], anticolor["Value"])
+            game.Lighting.Ambient = Color3.fromRGB(123, 0, 185)
             game.Lighting.OutdoorAmbient = Color3.fromRGB(0, 0, 0)
 	    game.Lighting.TimeOfDay = "19:00:00"
         else
