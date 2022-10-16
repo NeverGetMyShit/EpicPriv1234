@@ -7,7 +7,6 @@ local UIS = game:GetService("UserInputService")
 local COB = function(tab, argstable) 
     return GuiLibrary["ObjectsThatCanBeSaved"][tab.."Window"]["Api"].CreateOptionsButton(argstable)
 end
-
 local players = game:GetService("Players")
 local textservice = game:GetService("TextService")
 local repstorage = game:GetService("ReplicatedStorage")
@@ -626,7 +625,7 @@ local ui
                             if not Enabled then
                                 local studs = (startpos - char:FindFirstChild("HumanoidRootPart").Position).Magnitude
                                 local time_ = math.abs(starttick - tick())
-                                CreateNotification("BetterFly","Flew "..math.floor(studs).." Studs in "..time_.." Seconds!",5)
+                                createwarning("BetterFly","Flew "..math.floor(studs).." Studs in "..time_.." Seconds!",5)
                                 return
                             end
                             local studs = (startpos - char:FindFirstChild("HumanoidRootPart").Position).Magnitude
