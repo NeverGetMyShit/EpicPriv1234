@@ -680,7 +680,6 @@ local ui
             end
         end
     })
-local anticolor = {["Hue"] = 1, ["Sat"] = 1, ["Value"] = 0.55}
 local Ambience = GuiLibrary["ObjectsThatCanBeSaved"]["RenderWindow"]["Api"].CreateOptionsButton({
     ["Name"] = "Ambience",
     ["Function"] = function(callback)
@@ -695,11 +694,4 @@ local Ambience = GuiLibrary["ObjectsThatCanBeSaved"]["RenderWindow"]["Api"].Crea
         end
     end
 })
-anticolor = Ambience.CreateColorSlider({
-		["Name"] = "Color",
-		["Function"] = function() 
-			if antivoidpart then
-				antivoidpart.Color = Color3.fromHSV(anticolor["Hue"], anticolor["Sat"], anticolor["Value"])
-			end
-		end
-	})
+
