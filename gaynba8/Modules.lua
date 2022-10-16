@@ -681,7 +681,7 @@ local ui
         end
     })
 
-local Ambience = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateOptionsButton({
+local Ambience = GuiLibrary["ObjectsThatCanBeSaved"]["RenderWindow"]["Api"].CreateOptionsButton({
     ["Name"] = "Ambience",
     ["Function"] = function(callback)
         if callback then
