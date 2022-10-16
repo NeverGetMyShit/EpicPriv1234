@@ -590,7 +590,7 @@ local ui
     local clone
     local Enabled = false
     local BetterFly = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateOptionsButton({
-        ["Name"] = "FunnyFlyV2",
+        ["Name"] = "FunnyFlyV23",
         ["Function"] = function(callback)
             if callback then
                 spawn(function()
