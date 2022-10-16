@@ -531,6 +531,7 @@ local BiMode = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].Creat
 	["Name"]  = "FourBigGuysExploit",
 	["Function"] = function(callback)
 		if callback then
+			--patched so put a error message
 			createwarning("FourBigGuysExploit", "Couldnt Find remote!", 5)
 		end
 	end,
@@ -545,7 +546,6 @@ local BiMode = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].Creat
         ["Name"] = "FunnyIndicator",
         ["Function"] = function(callback)
                 if callback then
-				createwarning("Callback", "CallBack Works", 5)
                 old = debug.getupvalue(bedwars["DamageIndicator"],10,{Create})
                 debug.setupvalue(bedwars["DamageIndicator"],10,{
                     Create = function(self,obj,...)
@@ -590,7 +590,7 @@ local ui
     local clone
     local Enabled = false
     local BetterFly = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateOptionsButton({
-        ["Name"] = "FunnyFlyV23",
+        ["Name"] = "FunnyFlyV2",
         ["Function"] = function(callback)
             if callback then
                 spawn(function()
