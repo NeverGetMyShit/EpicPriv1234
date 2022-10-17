@@ -68,7 +68,7 @@ VapePrivate = COB("Blatant", {
             getgenv().invis = true
             spawn(function()
             while invis == true do
-				game.Players.LocalPlayer.Character.Head:FindFirstChild("face"):Destroy()
+				game.Players.LocalPlayer.Character.Head:FindFirstChild("face").Transparency = 1
             local players = game:GetService("Players")
 local localplayer = players.LocalPlayer
 local character = localplayer.Character or localplayer.CharacterAdded:Wait()
@@ -526,7 +526,6 @@ VapePrivat["ToggleButton"](false)
 		end
 	})
 	
-	local BiMode_Blur 
 local BiMode = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].CreateOptionsButton({
 	["Name"]  = "FourBigGuysExploit",
 	["Function"] = function(callback)
