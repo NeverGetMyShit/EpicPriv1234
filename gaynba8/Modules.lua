@@ -695,10 +695,9 @@ local Ambience = GuiLibrary["ObjectsThatCanBeSaved"]["RenderWindow"]["Api"].Crea
 })
 
 local Inviteall = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].CreateOptionsButton({
-    ["Name"] = "InviteAll",
+    ["Name"] = "InvitePartyAll",
     ["Function"] = function(callback)
         if callback then
-	createwarning("InviteAll", "Inviting all players")
         for i,v in pairs(game.Players:GetChildren()) do
         if v.Name == game.Players.LocalPlayer.Name then
         else
