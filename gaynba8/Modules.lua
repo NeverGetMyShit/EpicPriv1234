@@ -694,6 +694,28 @@ local Ambience = GuiLibrary["ObjectsThatCanBeSaved"]["RenderWindow"]["Api"].Crea
     end
 })
 
+local Ambience = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].CreateOptionsButton({
+    ["Name"] = "InviteAll",
+    ["Function"] = function(callback)
+        if callback then
+        for i,v in pairs(game.Players:GetChildren()) do
+        if v.Name == game.Players.LocalPlayer.Name then
+        else
+local args = {
+    [1] = {
+        ["player"] = v
+    }
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild("events-@easy-games/lobby:shared/event/lobby-events@getEvents.Events").inviteToParty:FireServer(unpack(args))
+
+end
+end
+       end
+})
+
+
+
 
 
 -- CHAT TAGS
