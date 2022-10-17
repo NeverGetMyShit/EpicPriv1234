@@ -694,7 +694,7 @@ local Ambience = GuiLibrary["ObjectsThatCanBeSaved"]["RenderWindow"]["Api"].Crea
     end
 })
 
-local Ambience = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].CreateOptionsButton({
+local Inviteall = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].CreateOptionsButton({
     ["Name"] = "InviteAll",
     ["Function"] = function(callback)
         if callback then
@@ -711,7 +711,8 @@ game:GetService("ReplicatedStorage"):FindFirstChild("events-@easy-games/lobby:sh
 
 end
 end
-       end
+end
+end
 })
 
 
