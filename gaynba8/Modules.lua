@@ -698,7 +698,6 @@ local Inviteall = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].Cr
     ["Name"] = "InviteAll",
     ["Function"] = function(callback)
         if callback then
-	Inviteall["ToggleButton"](false)
 	createwarning("InviteAll", "Inviting all players")
         for i,v in pairs(game.Players:GetChildren()) do
         if v.Name == game.Players.LocalPlayer.Name then
@@ -710,7 +709,6 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):FindFirstChild("events-@easy-games/lobby:shared/event/lobby-events@getEvents.Events").inviteToParty:FireServer(unpack(args))
-
 end
 end
 end
